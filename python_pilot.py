@@ -30,3 +30,9 @@ mystring[8]
 mystring[-2]==mystring[9]
 
 mystring='abcdefghijk'
+mystring[0:]
+
+# retrun the value of string
+print(mystring[0:2])
+
+print(mystring[2:8:2])
