@@ -65,5 +65,34 @@ print('The reuslt is {r:2.3 f}'.format(r=result))
 
 name=raw_input("What's you name")
 print('His name is {}'.format(name))
+print(f'His name is {name}')
+
+print('His name is {n}, his age is {age}, his height is {h}. David is {age} as well'.format(n='Fred',age='32',h='5 feet 8 inches'))
+print('His name is %s and his age is %s' %('Michael','65\n\thappy'))
 
 
+
+################################################################################################################################################
+#																																			   #
+#																																			   #
+#																Python List																	   #
+#																																			   #
+#																																			   #
+################################################################################################################################################
+
+
+mylist=['one','two','three']
+mylist[:1]
+
+another_list=["four","five"]
+
+# list concatenation
+mylist+another_list
+newlist=mylist+another_list
+newlist[0]="one new item"
+
+# list appendment
+
+newlist.append('six')
+newlist.remove('six')
+newlist.pop()
