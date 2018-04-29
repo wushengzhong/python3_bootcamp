@@ -36,3 +36,21 @@ mystring[0:]
 print(mystring[0:2])
 
 print(mystring[2:8:2])
+
+
+# string properties
+# immutatble
+newstring=mystring[1:]
+
+# need to use + sign to concatenate
+newstring='s'+newstring
+
+letter='z'
+print(letter*10)
+
+'2'+'3'
+#'23'
+
+x='Hi This is a string'
+x.split()
+
