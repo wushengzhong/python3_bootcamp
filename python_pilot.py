@@ -52,5 +52,18 @@ print(letter*10)
 #'23'
 
 x='Hi This is a string'
-x.split()
+x.split('i')
+
+print('This is a string {}'.format('INSERTED'))
+print('The{1}{2}{0}'.format('fox','quick','brown'))
+print('The {f} {q} {b}'.format(f='fox',q='quick',b='brown'))
+
+
+
+result=100/777
+print('The reuslt is {r:2.3 f}'.format(r=result))
+
+name=raw_input("What's you name")
+print('His name is {}'.format(name))
+
 
