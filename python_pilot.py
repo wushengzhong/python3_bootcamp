@@ -96,3 +96,143 @@ newlist[0]="one new item"
 newlist.append('six')
 newlist.remove('six')
 newlist.pop()
+popped_item=newlist.pop()
+
+# pop via index
+popped_item=newlist.pop(0)
+newlist.pop(-1)
+
+# sort & reverse methods
+newlist.sort()
+
+# none type return
+my_sorted_list=newlist.sort()
+
+newlist.sort()
+my_sorted_list=newlist
+
+newlist.reverse()
+
+
+################################################################################################################################################
+#																																			   #
+#																																			   #
+#																Python Dictionary															   #
+#																																			   #
+#																																			   #
+################################################################################################################################################
+
+dict={'key1':'value1','key2':'value2'}
+
+newdic={'apple':2.4,'banana':2}
+
+d={'key1':['a','b','c']}
+d['key1'][2].upper()
+
+# dictionary is mutable
+
+d['key2']=[1,2,3]
+
+d.keys()
+d.values()
+d.items()
+
+################################################################################################################################################
+#																																			   #
+#																																			   #
+#																Python Tuple															   #
+#																																			   #
+#																																			   #
+################################################################################################################################################
+
+
+
+t=(1,2,3)
+type(t)
+
+mylist=[1,2,3]
+type(mylist)
+
+len(t)
+t=('one',2)
+t[0]
+t[-1]
+
+t= ('a','a','b')
+t.count()
+t.index()
+
+#immutatbility
+
+mylist[0]='new'
+
+# tuple is different from list
+t[0]='new'
+# returns error
+
+myset=set()
+myset.add(1)
+myset.add(1)
+myset.add(2)
+
+set(mylist)
+
+set('Mississipi')
+#returns{ 'M','i','p','s'}
+
+
+set({'key':'value','key1':'value'})
+#returns {'key','key2'}
+
+True
+
+False
+
+1>2
+
+2>1
+
+1==1
+1==1.0
+
+
+# %%writefile myfile.txt
+# Hello this is a text file
+# this is the second line
+# this is the third line
+myfile=open('myfile.txt')
+
+myfile.read()
+
+# run again, runs into ' '
+myfile.read()
+#returns ''
+
+#reset cursor
+myfile.seek(0)
+myfile.read()
+
+
+myfile.readline()
+myfile.readlines()
+
+with open("/Users/Wenyi/Documents/fredwu/jupyter notebook/myfile.txt") as my_file:
+    contents=my_file.readlines()
+
+# %%writefile myfile.txt
+# one on first
+# two on second
+# three on third 
+
+with open('myfile.txt',mode='r') as f:
+    print(f.read())
+
+with open('myfile.txt',mode='a') as f:
+    f.write('\nfour on fourth')    
+
+# one on first
+# two on second
+# three on third 
+# four on fourth
+
+
